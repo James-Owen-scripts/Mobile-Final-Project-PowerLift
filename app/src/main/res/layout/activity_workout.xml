@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workout"
+    android:orientation="vertical"
+    android:background="@drawable/profile_gradient">
+    <TextView
+        android:id="@+id/workout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32dp"
+        android:textColor="@color/darkBlue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="44dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backBtn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/special_button"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/workout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="15"
+            android:text="@string/workoutText"
+            android:textAlignment="center"
+            android:textColor="@color/midBlue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/complete_workout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/special_button"
+            android:text="@string/completeBtn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/workout_rec_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

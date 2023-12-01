@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/profile_gradient">
+    <TextView
+        android:id="@+id/day_tracker_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/dayTrackerText"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/darkBlue"/>
+
+    <ListView
+        android:id="@+id/workouts_week_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/veryLightBlue"
+        android:divider="@color/darkBlue"
+        android:dividerHeight="5dp"
+        android:listSelector="@color/blue" />
+    <Button
+        android:id="@+id/complete_week_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/completeWeekBtn"
+        android:textColor="@color/white"
+        android:background="@drawable/special_button"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

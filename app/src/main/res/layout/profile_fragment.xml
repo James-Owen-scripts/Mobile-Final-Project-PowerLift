@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_gradient">
+
+    <TextView
+        android:id="@+id/profile_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profileHeader"
+        android:textColor="@color/darkBlue"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hello User"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_header_text" />
+
+    <TextView
+        android:id="@+id/average_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/aveBWText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_text" />
+
+    <TextView
+        android:id="@+id/average_readiness_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/aveRSText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/average_weight_text"
+        app:layout_constraintTop_toBottomOf="@+id/average_weight_text" />
+
+    <TextView
+        android:id="@+id/current_block_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/curBlockText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/average_readiness_score_text"
+        app:layout_constraintTop_toBottomOf="@+id/average_readiness_score_text" />
+
+    <TextView
+        android:id="@+id/current_week_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/curWeekText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/current_block_text"
+        app:layout_constraintTop_toBottomOf="@+id/current_block_text" />
+
+    <TextView
+        android:id="@+id/completed_workouts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/compWorkoutsText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/current_week_text"
+        app:layout_constraintTop_toBottomOf="@+id/current_week_text" />
+
+    <TextView
+        android:id="@+id/average_weight_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="180"
+        android:textColor="@color/midBlue"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/average_weight_text"
+        app:layout_constraintStart_toEndOf="@+id/average_weight_text" />
+
+    <TextView
+        android:id="@+id/average_readiness_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textColor="@color/midBlue"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/average_readiness_score_text"
+        app:layout_constraintEnd_toEndOf="@+id/average_weight_value_text"
+        app:layout_constraintStart_toStartOf="@+id/average_weight_value_text" />
+
+    <TextView
+        android:id="@+id/current_block_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hypertrophy"
+        android:textSize="18dp"
+        android:textColor="@color/midBlue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/current_block_text"
+        app:layout_constraintEnd_toEndOf="@+id/average_readiness_value_text"
+        app:layout_constraintStart_toStartOf="@+id/average_readiness_value_text" />
+
+    <TextView
+        android:id="@+id/current_week_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/midBlue"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/current_week_text"
+        app:layout_constraintEnd_toEndOf="@+id/current_block_value_text"
+        app:layout_constraintStart_toStartOf="@+id/current_block_value_text" />
+
+    <TextView
+        android:id="@+id/completed_workouts_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/midBlue"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/completed_workouts_text"
+        app:layout_constraintEnd_toEndOf="@+id/current_week_value_text"
+        app:layout_constraintStart_toStartOf="@+id/current_week_value_text" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="185dp"
+        android:layout_height="154dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

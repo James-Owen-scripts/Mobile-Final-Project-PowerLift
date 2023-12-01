@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitnessLevel"
+    android:background="@drawable/profile_gradient">
+
+    <TextView
+        android:id="@+id/calculator_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/darkBlue"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exercise_calculate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Squat"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator_header" />
+
+    <TextView
+        android:id="@+id/ten_rep_max_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tenRepMaxText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_calculate_text" />
+
+    <TextView
+        android:id="@+id/one_rep_max_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/oneRebMaxText"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/ten_rep_max_text"
+        app:layout_constraintTop_toBottomOf="@+id/ten_rep_max_text" />
+
+    <EditText
+        android:id="@+id/ten_rep_max_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/special_edit_text"
+        android:ems="8"
+        android:hint="@string/repMaxHint"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/whiteBlue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ten_rep_max_text"
+        app:layout_constraintStart_toEndOf="@+id/ten_rep_max_text" />
+
+    <EditText
+        android:id="@+id/one_rep_max_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:hint="@string/repMaxHint"
+        android:textColorHint="@color/whiteBlue"
+        android:textColor="@color/white"
+        android:background="@drawable/special_edit_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/one_rep_max_calc"
+        app:layout_constraintEnd_toEndOf="@+id/ten_rep_max_value_text"
+        app:layout_constraintStart_toStartOf="@+id/ten_rep_max_value_text" />
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/doneBtn"
+        android:background="@drawable/special_button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

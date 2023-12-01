@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:padding="20dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/exercise_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="BenchPress"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/swap"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/swap"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/set_weight_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/special_button"
+                    android:layout_margin="5dp"
+                    android:text="@string/setWeightBtn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/suggested_reps_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/repCounter"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/rep_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:layout_weight="6"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/suggested_sets_and_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/suggestedSetsAndWeight"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/set_1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/set1Text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/firstSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100lbs"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/set_2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/set2Text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/secondSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100lbs"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/set_3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/set3Text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/thirdSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100lbs"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/set_4_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/set4Text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fourthSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100lbs"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">PowerLift Coach</string>
+
+    <!-- Multi use Strings -->
+    <string name="emailHint">Example@Domain.com</string>
+    <string name="passwordText">Enter Password:</string>
+    <string name="passwordHint">Enter Here</string>
+    <string name="doneBtn">Done</string>
+
+    <!-- Login Screen Strings-->
+    <string name="loginHeader">Welcome to\nPowerLift Coach</string>
+    <string name="emailText">Enter Email:</string>
+    <string name="createAccountBtn">Create Account</string>
+    <string name="loginBtn">Login</string>
+
+    <!-- Create account Screen Strings -->
+    <string name="createAccountHeader">PowerLift Coach\nCreateAccount</string>
+    <string name="nameText">Enter Your Name:</string>
+    <string name="nameHint">Ex. John Doe</string>
+    <string name="reEnterPasswordText">Re-Enter Password:</string>
+    <string name="submitBtn">Submit</string>
+    <string name="rePasswordHint">Re-Enter Here</string>
+
+    <!-- Profile Strings -->
+    <string name="profileHeader">Profile</string>
+    <string name="aveBWText">Average Body Weight (lbs):</string>
+    <string name="aveRSText">Average Readiness Score:</string>
+    <string name="curBlockText">Current Block:</string>
+    <string name="curWeekText">Current Week #:</string>
+    <string name="compWorkoutsText">Completed Workouts #:</string>
+    <string name="outOf16">/16</string>
+
+    <!-- Day Tracker Strings -->
+    <string name="dayTrackerText">Day Tracker</string>
+    <string-array name="days">
+        <item>Day 1 - Monday</item>
+        <item>Day 2 - Wednesday</item>
+        <item>Day 3 - Thursday</item>
+        <item>Day 4 - Friday</item>
+        <item>Day 5 - Sunday</item>
+    </string-array>
+    <string name="completeWeekBtn">Complete Week</string>
+
+    <!-- Readiness Strings -->
+    <string name="readinessHeader">PowerLift Coach\nDaily Readiness</string>
+    <string name="cWText">Current Weight</string>
+    <string name="lbsText">lbs</string>
+    <string name="tirednessText">Tiredness</string>
+    <string name="sorenessText">Soreness</string>
+    <string name="motiveText">Motivation</string>
+    <string name="dietText">Diet</string>
+    <string name="nextBtn">Next</string>
+    <string name="rating1">1</string>
+    <string name="rating2">2</string>
+    <string name="rating3">3</string>
+    <string name="rating4">4</string>
+    <string name="rating5">5</string>
+
+    <!-- Calculator Strings -->
+    <string name="tenRepMaxText">Enter 10 Rep Max (lbs):</string>
+    <string name="oneRebMaxText">Enter 1 Rep Max (lbs):</string>
+    <string name="repMaxHint">Ex. 100</string>
+
+    <!-- Workout Strings -->
+    <string name="workoutText">Workout</string>
+    <string name="backBtn">Back</string>
+    <string name="completeBtn">Complete Workout</string>
+    <string name="setWeightBtn">Set Weight</string>
+    <string name="repCounter">Suggested Reps:</string>
+    <string name="suggestedSetsAndWeight">Suggested Sets and Weight (lbs):</string>
+    <string name="set1Text">Set 1:</string>
+    <string name="set2Text">Set 2:</string>
+    <string name="set3Text">Set 3:</string>
+    <string name="set4Text">Set 4:</string>
+
+    <!-- Exercise Swap Strings -->
+    <string name="exerciseSwapText">Exercise Swap</string>
+    <string name="cancelBtn">Cancel</string>
+</resources>

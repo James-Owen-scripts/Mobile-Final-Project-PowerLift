@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfileAndDailyTracker">
+    <TextView
+        android:id="@+id/main_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@color/veryLightBlue"
+        android:textColor="@color/darkBlue"
+        android:text="@string/app_name"
+        android:textSize="32dp"
+        android:textAlignment="center" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/user_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:tabTextColor="@color/whiteBlue"
+        app:tabSelectedTextColor="@color/lightBlue"
+        app:tabIndicator="@color/whiteBlue" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/user_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+
+</LinearLayout>
